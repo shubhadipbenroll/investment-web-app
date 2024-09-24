@@ -98,7 +98,7 @@ def create_user():
 
   try:
     # Create a new user instance
-    new_user = __tablename__(UserName=username,
+    new_user = User(UserName=username,
                      Email=email,
                      UserPassword=password,
                      UserRole=role)
